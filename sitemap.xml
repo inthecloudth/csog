@@ -191,6 +191,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://inthecloud.co.th/cog/ms/azure/Install%20Microsoft%20Azure%20Backup%20Server%20%28MABS%29/</loc>
+         <lastmod>2024-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://inthecloud.co.th/cog/ms/azure/Onboard%20Azure%20Arc-enabled%20servers/</loc>
          <lastmod>2024-10-26</lastmod>
          <changefreq>daily</changefreq>
