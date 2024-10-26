@@ -56,11 +56,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://inthecloud.co.th/cog/azure/Azure%20Arc%20-%20Onboard%20Azure%20Arc-enabled%20servers/</loc>
-         <lastmod>2024-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://inthecloud.co.th/cog/azure/Azure%20Backup%20-%20Install%20Microsoft%20Azure%20Backup%20Server%20%28MABS%29/</loc>
          <lastmod>2024-10-26</lastmod>
          <changefreq>daily</changefreq>
@@ -156,6 +151,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://inthecloud.co.th/cog/ms/azure/Enable%20Azure%20File%20Sync%20on%20an%20on-premises%20file%20share/</loc>
+         <lastmod>2024-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://inthecloud.co.th/cog/ms/azure/Implementing%20Azure%20Backup%20and%20Site%20Recovery/</loc>
          <lastmod>2024-10-26</lastmod>
          <changefreq>daily</changefreq>
@@ -187,6 +187,11 @@
     </url>
     <url>
          <loc>https://inthecloud.co.th/cog/ms/azure/Implementing%20Private%20Azure%20Machine%20Learning%20%28ML%29/</loc>
+         <lastmod>2024-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inthecloud.co.th/cog/ms/azure/Onboard%20Azure%20Arc-enabled%20servers/</loc>
          <lastmod>2024-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
