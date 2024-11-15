@@ -66,17 +66,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://inthecloud.co.th/cog/az/Azure%20Backup%20-%20Install%20Microsoft%20Azure%20Backup%20Server%20%28MABS%29/</loc>
-         <lastmod>2024-11-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://inthecloud.co.th/cog/az/Azure%20Storage%20-%20Enable%20Azure%20File%20Sync%20on%20an%20on-premises%20file%20share/</loc>
-         <lastmod>2024-11-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://inthecloud.co.th/cog/az/compute/Create%20the%20first%20vm/</loc>
+         <loc>https://inthecloud.co.th/cog/az/compute/Create%20the%20first%20VM/</loc>
          <lastmod>2024-11-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
