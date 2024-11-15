@@ -505,6 +505,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create the first VM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -514,6 +525,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vm-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      ขั้นตอนการสร้าง VM เครื่องแรกใน AWS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2730,6 +2778,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vm-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      ขั้นตอนการสร้าง VM เครื่องแรกใน AWS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2744,6 +2818,88 @@
 
 
 <h1 id="create-the-first-vm">Create the first VM</h1>
+<p>การสร้าง Virtual Machine (VM) หรือ Instance เครื่องแรกใน <strong>AWS (Amazon Web Services)</strong> ทำได้ง่ายโดยใช้บริการ <strong>Amazon EC2 (Elastic Compute Cloud)</strong> นี่คือขั้นตอนการสร้าง VM อย่างละเอียด:</p>
+<h3 id="vm-aws">ขั้นตอนการสร้าง VM เครื่องแรกใน AWS</h3>
+<ol>
+<li><strong>เข้าสู่ระบบ AWS Management Console</strong></li>
+<li>
+<p>เข้าไปที่ <a href="https://aws.amazon.com/console/">AWS Console</a> และล็อกอินเข้าสู่บัญชี AWS ของคุณ</p>
+</li>
+<li>
+<p><strong>เปิดบริการ Amazon EC2</strong></p>
+</li>
+<li>
+<p>ในหน้า Console ให้ค้นหา "EC2" จากแถบค้นหา และเลือก <strong>EC2</strong> เพื่อเข้าสู่หน้าจัดการบริการ EC2</p>
+</li>
+<li>
+<p><strong>เลือก Launch Instance</strong></p>
+</li>
+<li>
+<p>ในหน้า EC2 Dashboard ให้คลิกที่ปุ่ม <strong>Launch Instance</strong> เพื่อเริ่มต้นการสร้าง VM</p>
+</li>
+<li>
+<p><strong>ตั้งชื่อและเลือก AMI (Amazon Machine Image)</strong></p>
+</li>
+<li>ตั้งชื่อ Instance ตามที่ต้องการ</li>
+<li>
+<p>เลือก <strong>Amazon Machine Image (AMI)</strong> หรือระบบปฏิบัติการที่ต้องการ เช่น <strong>Amazon Linux 2</strong>, <strong>Ubuntu</strong>, หรือ <strong>Windows Server</strong></p>
+</li>
+<li>
+<p><strong>เลือกประเภทของ Instance (Instance Type)</strong></p>
+</li>
+<li>
+<p>เลือกขนาดและประเภทของ Instance ที่เหมาะสม เช่น <strong>t2.micro</strong> สำหรับ Free Tier (มีสิทธิ์ใช้ฟรี 750 ชั่วโมงต่อเดือน) หรือขนาดอื่นๆ ตามความต้องการของระบบ</p>
+</li>
+<li>
+<p><strong>ตั้งค่าคีย์คู่ (Key Pair)</strong></p>
+</li>
+<li>เลือกสร้าง <strong>Key Pair</strong> เพื่อใช้เข้าถึง Instance ผ่าน SSH (สำหรับ Linux) หรือ RDP (สำหรับ Windows)</li>
+<li>
+<p>ดาวน์โหลดไฟล์ <code>.pem</code> ที่ได้มาและเก็บรักษาไว้ให้ปลอดภัย</p>
+</li>
+<li>
+<p><strong>กำหนดการตั้งค่าเครือข่าย (Network Settings)</strong></p>
+</li>
+<li>เลือก <strong>VPC (Virtual Private Cloud)</strong> และ <strong>Subnet</strong> ที่ต้องการใช้</li>
+<li>กำหนด <strong>Auto-assign Public IP</strong> ให้เป็น Enabled หากต้องการให้ Instance สามารถเข้าถึงได้จากอินเทอร์เน็ต</li>
+<li>
+<p>กำหนด <strong>Security Group</strong> เพื่อเปิดพอร์ตที่ต้องการ เช่น พอร์ต 22 สำหรับ SSH (Linux) หรือพอร์ต 3389 สำหรับ RDP (Windows)</p>
+</li>
+<li>
+<p><strong>ตั้งค่าพื้นที่เก็บข้อมูล (Storage)</strong></p>
+</li>
+<li>ระบุขนาดของ EBS Volume (เช่น 8GB) สำหรับ Root Volume ของ Instance</li>
+<li>
+<p>เลือกประเภทของ Storage เช่น <strong>General Purpose SSD (gp2)</strong> สำหรับการใช้งานทั่วไป</p>
+</li>
+<li>
+<p><strong>ตรวจสอบการตั้งค่าและ Launch Instance</strong></p>
+</li>
+<li>ตรวจสอบการตั้งค่าทั้งหมดให้ถูกต้อง</li>
+<li>
+<p>คลิก <strong>Launch Instance</strong> เพื่อเริ่มต้นสร้าง VM ของคุณ</p>
+</li>
+<li>
+<p><strong>การตรวจสอบสถานะและการเชื่อมต่อเข้า VM</strong></p>
+<ul>
+<li>หลังจาก Instance ถูกสร้างแล้ว ให้รอสักครู่จนสถานะเปลี่ยนเป็น <strong>Running</strong></li>
+<li>ตรวจสอบ <strong>Public IP Address</strong> หรือ <strong>Public DNS</strong> ที่ใช้ในการเชื่อมต่อเข้าไปยัง VM</li>
+<li>
+<p>ใช้ SSH (สำหรับ Linux) หรือ RDP (สำหรับ Windows) เพื่อเชื่อมต่อเข้าไปยัง VM โดยใช้ Key Pair ที่สร้างไว้</p>
+</li>
+<li>
+<p>ตัวอย่างคำสั่ง SSH สำหรับ Linux:
+  <code>bash
+  ssh -i /path/to/your-key.pem ec2-user@your-public-ip</code></p>
+</li>
+<li>
+<p>สำหรับ Windows, ใช้โปรแกรม Remote Desktop Connection โดยนำ Public IP ใส่และใช้ไฟล์ <code>.pem</code> เพื่อถอดรหัสข้อมูลสำหรับล็อกอิน</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="_1">สรุป</h3>
+<p>เพียงทำตามขั้นตอนด้านบน คุณก็จะสามารถสร้างและใช้งาน VM เครื่องแรกใน AWS ได้เรียบร้อย</p>
 
 
 
