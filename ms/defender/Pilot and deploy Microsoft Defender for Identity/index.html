@@ -8,8 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://inthecloud.co.th/cog/ms/azure/Implementing%20Azure%20Landing%20Zones/">
+        <link rel="canonical" href="https://inthecloud.co.th/cog/ms/defender/Pilot%20and%20deploy%20Microsoft%20Defender%20for%20Identity/">
       
+      
+        <link rel="prev" href="../../../home/">
       
       
       
@@ -18,7 +20,7 @@
     
     
       
-        <title>Implementing Azure Landing Zones - In the Cloud</title>
+        <title>Pilot and deploy Microsoft Defender for Identity - In the Cloud</title>
       
     
     
@@ -69,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#1-buy-a-domain" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implementing Azure Landing Zones
+              Pilot and deploy Microsoft Defender for Identity
             
           </span>
         </div>
@@ -188,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../defender/Pilot%20and%20deploy%20Microsoft%20Defender%20for%20Identity/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Defender
@@ -260,23 +259,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -287,7 +291,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Defender
@@ -298,10 +302,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../defender/Pilot%20and%20deploy%20Microsoft%20Defender%20for%20Identity/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -310,6 +321,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -340,50 +352,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-buy-a-domain" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Buy a domain
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-add-a-custom-domain" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Add a custom domain
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-change-users-upn-suffixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Change users' UPN suffixes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Test
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -397,58 +365,9 @@
                   
 
 
-  <h1>Implementing Azure Landing Zones</h1>
+  <h1>Pilot and deploy Microsoft Defender for Identity</h1>
 
-<p>จริงๆ แล้ว ในการทดลองใช้งาน Entra ID เราใช้แค่ชื่อ default tenant "your-tenant-name.onmicrosoft.com" ก็เพียงพอแล้ว</p>
-<p>แต่ถ้าเราอยากลองทำให้เหมือนจริง ก็อาจจะลองเพิ่ม custom domain เข้ามาใน Entra ID tenant ของเราได้</p>
-<p>จากนั้นก็ให้ user ใช้ username@domain.xxx แทน username@your-tenant-name.onmicrosoft.com ได้เลยครับ</p>
-<h2 id="1-buy-a-domain">1. Buy a domain</h2>
-<p>1. ซื้อ domain ราคาถูก จากที่ไหนก็ได้</p>
-<p>เลือกแค่ 1 ปี</p>
-<p><a href="../assets/screenshots/1.6.1 buy the domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.1 buy the domain.jpg" /></a></p>
-<p>ปิดทุก option ที่จะทำให้เราเสียเงินเพิ่ม</p>
-<p><a href="../assets/screenshots/1.6.2 reduce cost.jpg"><img alt="alt text" src="../assets/screenshots/1.6.2 reduce cost.jpg" /></a></p>
-<p>แล้วกดซื้อ</p>
-<p><a href="../assets/screenshots/1.6.3 complete purchase.jpg"><img alt="alt text" src="../assets/screenshots/1.6.3 complete purchase.jpg" /></a></p>
-<p>ตอนนี้เราได้ domain ที่จะนำไปเพิ่มลงใน tenant ของเราแล้ว</p>
-<p><a href="../assets/screenshots/1.6.4 complete purchase 2.jpg"><img alt="alt text" src="../assets/screenshots/1.6.4 complete purchase 2.jpg" /></a></p>
-<p>2. อย่าลืมเข้ามาปิด auto renew ด้วยนะครับ</p>
-<p><a href="../assets/screenshots/1.6.5 turn off auto renew.jpg"><img alt="alt text" src="../assets/screenshots/1.6.5 turn off auto renew.jpg" /></a></p>
-<h2 id="2-add-a-custom-domain">2. Add a custom domain</h2>
-<p>1. ใน Azure portal เลือก Add custom domain</p>
-<p><a href="../assets/screenshots/1.6.6 add a custom domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.6 add a custom domain.jpg" /></a></p>
-<p>copy ข้อมูล txt record ที่ระบบ generate ให้</p>
-<p><a href="../assets/screenshots/1.6.7 txt record info.jpg"><img alt="alt text" src="../assets/screenshots/1.6.7 txt record info.jpg" /></a></p>
-<p>2. แล้วนำข้อมูล TXT record ไปสร้างใน DNS zone ที่เราพึ่งจดทะเบียนไป</p>
-<p><a href="../assets/screenshots/1.6.9 add txt record to dns.jpg"><img alt="alt text" src="../assets/screenshots/1.6.9 add txt record to dns.jpg" /></a></p>
-<p>3. จากนั้นกลับไปที่ Azure portal เพื่อ verify domain</p>
-<p>รอสักครู่ แล้วค่อยกด verify หรืออาจลองกด verify หลายๆ ครั้งหน่อย จนสำเร็จ</p>
-<p><a href="../assets/screenshots/1.6.10 verify domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.10 verify domain.jpg" /></a></p>
-<p>4. เลือก domain ใหม่</p>
-<p><a href="../assets/screenshots/1.6.11 select new domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.11 select new domain.jpg" /></a></p>
-<p>แล้วแล้ว Make primary</p>
-<p><a href="../assets/screenshots/1.6.12 make primary.jpg"><img alt="alt text" src="../assets/screenshots/1.6.12 make primary.jpg" /></a></p>
-<p>ตอนนี้ domain ใหม่เป็น primary domain แล้ว</p>
-<p><a href="../assets/screenshots/1.6.13 verify the new domain is primary.jpg"><img alt="alt text" src="../assets/screenshots/1.6.13 verify the new domain is primary.jpg" /></a></p>
-<h2 id="3-change-users-upn-suffixes">3. Change users' UPN suffixes</h2>
-<p>1. เปลี่ยน UPN suffix ของ user1</p>
-<p><a href="../assets/screenshots/1.6.14 user1 properties.jpg"><img alt="alt text" src="../assets/screenshots/1.6.14 user1 properties.jpg" /></a></p>
-<p>เลือก domain ใหม่ที่พึ่งเพิ่มเข้ามา</p>
-<p><a href="../assets/screenshots/1.6.15 change upn user1.jpg"><img alt="alt text" src="../assets/screenshots/1.6.15 change upn user1.jpg" /></a></p>
-<p><a href="../assets/screenshots/1.6.15 user1 changed.jpg"><img alt="alt text" src="../assets/screenshots/1.6.15 user1 changed.jpg" /></a></p>
-<p>2. เปลี่ยน UPN suffix ของ user2 และ user3</p>
-<p><a href="../assets/screenshots/1.6.16 3 users changed.jpg"><img alt="alt text" src="../assets/screenshots/1.6.16 3 users changed.jpg" /></a></p>
-<h2 id="4-test">4. Test</h2>
-<p>1. ลอง sign in ด้วย UPN เดิม เช่น user1@your-tenant-name.onmicrosoft.com</p>
-<p>เราจะ sign in ไม่ได้</p>
-<p><a href="../assets/screenshots/1.6.17 test the old upn.jpg"><img alt="alt text" src="../assets/screenshots/1.6.17 test the old upn.jpg" /></a></p>
-<p>2. ลอง sign in อีกครั้งด้วย UPN ใหม่ user1@domain.xxx</p>
-<p><a href="../assets/screenshots/1.6.18 sign in with the new upn.jpg"><img alt="alt text" src="../assets/screenshots/1.6.18 sign in with the new upn.jpg" /></a></p>
-<p><a href="../assets/screenshots/1.6.19 password.jpg"><img alt="alt text" src="../assets/screenshots/1.6.19 password.jpg" /></a></p>
-<p>ตอนนี้ user สามารถ sign in ด้วย UPN ใหม่ได้แล้ว</p>
-<p><a href="../assets/screenshots/1.6.20 verify signed in.jpg"><img alt="alt text" src="../assets/screenshots/1.6.20 verify signed in.jpg" /></a></p>
-<p>...</p>
-<p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
+<p>Ref. https://learn.microsoft.com/en-us/defender-xdr/pilot-deploy-defender-identity</p>
 
 
 
