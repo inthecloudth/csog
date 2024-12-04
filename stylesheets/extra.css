@@ -16,3 +16,8 @@
 .md-typeset ul {
   font-size: 15px;
 }
+
+.md-grid {
+  margin-right: 20px;
+  margin-left: 20px; 
+}
