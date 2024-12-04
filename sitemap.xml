@@ -171,6 +171,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://inthecloud.co.th/cog/ms/azure/Deploy%20an%20Azure%20Kubernetes%20Service%20%28AKS%29%20cluster/</loc>
+         <lastmod>2024-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://inthecloud.co.th/cog/ms/azure/Enable%20Azure%20File%20Sync%20on%20an%20on-premises%20file%20share/</loc>
          <lastmod>2024-12-04</lastmod>
          <changefreq>daily</changefreq>
