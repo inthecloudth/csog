@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://incth.github.io/csog/</loc>
+         <loc>https://inthecloudth.github.io/csog/</loc>
          <lastmod>2025-02-14</lastmod>
     </url>
     <url>
-         <loc>https://incth.github.io/csog/entra/Conditional%20Access%20policy%20templates/</loc>
+         <loc>https://inthecloudth.github.io/csog/entra/Conditional%20Access%20policy%20templates/</loc>
          <lastmod>2025-02-14</lastmod>
     </url>
     <url>
-         <loc>https://incth.github.io/csog/entra/EntraHybridJoin/</loc>
+         <loc>https://inthecloudth.github.io/csog/entra/EntraHybridJoin/</loc>
          <lastmod>2025-02-14</lastmod>
     </url>
     <url>
-         <loc>https://incth.github.io/csog/intune/EnrollEntraHybridJoinToIntune/</loc>
+         <loc>https://inthecloudth.github.io/csog/intune/EnrollEntraHybridJoinToIntune/</loc>
          <lastmod>2025-02-14</lastmod>
     </url>
 </urlset>
