@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://inthecloudth.github.io/csog/entra/Conditional%20Access%20policy%20templates/">
+        <link rel="canonical" href="https://inthecloudth.github.io/csog/entra/casf/">
       
       
         <link rel="prev" href="../hbj/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Conditional Access for Zero Trust - In the Cloud</title>
+        <title>Conditional Access - Secure foundation - In the Cloud</title>
       
     
     
@@ -59,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Conditional Access for Zero Trust - In the Cloud" >
+        <meta  property="og:title"  content="Conditional Access - Secure foundation - In the Cloud" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/Conditional Access policy templates.png" >
+        <meta  property="og:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/casf.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,15 +71,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://inthecloudth.github.io/csog/entra/Conditional%20Access%20policy%20templates/" >
+        <meta  property="og:url"  content="https://inthecloudth.github.io/csog/entra/casf/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Conditional Access for Zero Trust - In the Cloud" >
+        <meta  name="twitter:title"  content="Conditional Access - Secure foundation - In the Cloud" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/Conditional Access policy templates.png" >
+        <meta  name="twitter:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/casf.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conditional-access-policy-templates" class="md-skip">
+        <a href="#conditional-access-secure-foundation" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conditional Access for Zero Trust
+              Conditional Access - Secure foundation
             
           </span>
         </div>
@@ -421,7 +421,7 @@
         
   
   <span class="md-ellipsis">
-    Hybrid Join targeted deployment
+    Hybrid Join - Targeted deployment
   </span>
   
 
@@ -447,15 +447,126 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conditional Access - Secure foundation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Conditional Access for Zero Trust
+    Conditional Access - Secure foundation
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-pilot-mfa-user-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a pilot MFA user group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-require-multifactor-authentication-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Require multifactor authentication for admins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-securing-security-info-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Securing security info registration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-block-legacy-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Block legacy authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-require-multifactor-authentication-for-admins-accessing-microsoft-admin-portals" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Require multifactor authentication for admins accessing Microsoft admin portals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-require-multifactor-authentication-for-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Require multifactor authentication for all users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-require-multifactor-authentication-for-azure-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Require multifactor authentication for Azure management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-require-compliant-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Require compliant device
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -564,6 +675,95 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-pilot-mfa-user-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a pilot MFA user group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-require-multifactor-authentication-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Require multifactor authentication for admins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-securing-security-info-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Securing security info registration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-block-legacy-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Block legacy authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-require-multifactor-authentication-for-admins-accessing-microsoft-admin-portals" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Require multifactor authentication for admins accessing Microsoft admin portals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-require-multifactor-authentication-for-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Require multifactor authentication for all users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-require-multifactor-authentication-for-azure-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Require multifactor authentication for Azure management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-require-compliant-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Require compliant device
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -577,8 +777,41 @@
                   
 
 
-<h1 id="conditional-access-policy-templates">Conditional Access policy templates</h1>
-<p>test</p>
+<h1 id="conditional-access-secure-foundation">Conditional Access - Secure foundation</h1>
+<p>Ref. https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation</p>
+<h2 id="1-create-a-pilot-mfa-user-group">1. Create a pilot MFA user group</h2>
+<p><img alt="alt text" src="../image.png" /></p>
+<h2 id="1-require-multifactor-authentication-for-admins">1. Require multifactor authentication for admins</h2>
+<p><img alt="alt text" src="../image-1.png" /></p>
+<p><img alt="alt text" src="../image-2.png" /></p>
+<p><img alt="alt text" src="../image-3.png" /></p>
+<p><img alt="alt text" src="../image-4.png" /></p>
+<p><img alt="alt text" src="../image-5.png" /></p>
+<p><img alt="alt text" src="../image-6.png" /></p>
+<p><img alt="alt text" src="../image-7.png" /></p>
+<p><img alt="alt text" src="../image-8.png" /></p>
+<p><img alt="alt text" src="../image-9.png" /></p>
+<p><img alt="alt text" src="../image-10.png" /></p>
+<h2 id="2-securing-security-info-registration">2. Securing security info registration</h2>
+<p><img alt="alt text" src="../image-11.png" /></p>
+<p><img alt="alt text" src="../image-12.png" /></p>
+<p><img alt="alt text" src="../image-13.png" /></p>
+<p><img alt="alt text" src="../image-14.png" /></p>
+<p><img alt="alt text" src="../image-15.png" /></p>
+<p><img alt="alt text" src="../image-16.png" /></p>
+<p><img alt="alt text" src="../image-17.png" /></p>
+<p><img alt="alt text" src="../image-18.png" /></p>
+<p><img alt="alt text" src="../image-19.png" /></p>
+<p><img alt="alt text" src="../image-20.png" /></p>
+<p><img alt="alt text" src="../image-21.png" /></p>
+<p><img alt="alt text" src="../image-22.png" /></p>
+<p><img alt="alt text" src="../image-23.png" /></p>
+<h2 id="3-block-legacy-authentication">3. Block legacy authentication</h2>
+<h2 id="4-require-multifactor-authentication-for-admins-accessing-microsoft-admin-portals">4. Require multifactor authentication for admins accessing Microsoft admin portals</h2>
+<h2 id="5-require-multifactor-authentication-for-all-users">5. Require multifactor authentication for all users</h2>
+<h2 id="6-require-multifactor-authentication-for-azure-management">6. Require multifactor authentication for Azure management</h2>
+<h2 id="7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users">7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users</h2>
+<h2 id="8-require-compliant-device">8. Require compliant device</h2>
 
 
 
