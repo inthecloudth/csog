@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://inthecloudth.github.io/csog/entra/EntraHybridJoin/">
+        <link rel="canonical" href="https://inthecloudth.github.io/csog/entra/hbj/">
       
       
-        <link rel="prev" href="../../intune/EnrollEntraHybridJoinToIntune/">
-      
-      
-        <link rel="next" href="../Conditional%20Access%20policy%20templates/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -65,7 +61,7 @@
       
         <meta  property="og:description"  content="Implementing Entra Hybrid join for pilot clients" >
       
-        <meta  property="og:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/EntraHybridJoin.png" >
+        <meta  property="og:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/hbj.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,7 +69,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://inthecloudth.github.io/csog/entra/EntraHybridJoin/" >
+        <meta  property="og:url"  content="https://inthecloudth.github.io/csog/entra/hbj/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -81,7 +77,7 @@
       
         <meta  name="twitter:description"  content="Implementing Entra Hybrid join for pilot clients" >
       
-        <meta  name="twitter:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/EntraHybridJoin.png" >
+        <meta  name="twitter:image"  content="https://inthecloudth.github.io/csog/assets/images/social/entra/hbj.png" >
       
     
     
@@ -182,20 +178,16 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../intune/EnrollEntraHybridJoinToIntune/" class="md-tabs__link">
           
   
@@ -266,28 +258,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -298,7 +285,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Microsoft
@@ -376,8 +363,6 @@
                 
   
   
-    
-  
   
   
     
@@ -387,11 +372,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -405,7 +390,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Entra
@@ -416,30 +401,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Entra Hybrid Join targeted deployment
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../EntraHybridJoin.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,131 +413,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-create-a-pilot-device-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Create a pilot device group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-configure-gpo-settigs-to-enable-entra-hybrid-join-targeted-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Configure GPO settigs to enable Entra Hybrid join targeted deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-configure-entra-connect-scopes-to-sync-device-objects-to-entra-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Configure Entra Connect scopes to sync device objects to Entra ID
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-test-a-pilot-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Test a pilot client
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Test a pilot client">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-move-a-pilot-device-to-a-synced-ou-add-to-the-pilot-device-group-and-restart-the-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.1 Move a pilot device to a synced OU, add to the pilot device group, and restart the client
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42-nothing-to-do-just-wait-until-success" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.2 Nothing to do, just wait until success
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43-test-sso" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.3 Test SSO
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-optional-speed-up-the-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. (Optional) Speed up the process
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      สิ่งที่ควรทำต่อไปในอนาคต
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      วิดีโอ
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      รายการอ้างอิง
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -828,7 +668,7 @@
 
 
 <h1 id="microsoft-entra-hybrid-join-targeted-deployment">Microsoft Entra hybrid join targeted deployment</h1>
-<p>ปัจจุบัน เครื่องคอมพิวเตอร์ส่วนใหญ่ยัง join on-premises AD DS อยู่ เราสามารถนำเขาไป join Entra ID โดยอัตโนมัติได้ด้วยการ enable Entra Hybrid Join</p>
+<p>ปัจจุบัน เครื่องคอมพิวเตอร์ส่วนใหญ่ยัง join on-premises AD DS อยู่ เราสามารถนำเขาไป join Entra ID โดยอัตโนมัติได้ด้วย Entra Hybrid Join</p>
 <p>แต่เรามี 2 ทางเลือก</p>
 <ul>
 <li>
@@ -880,20 +720,15 @@ Configure client-side registry setting for SCP</a></p>
 <h3 id="42-nothing-to-do-just-wait-until-success">4.2 Nothing to do, just wait until success</h3>
 <p>เมื่อ restart กลับมา เราไม่ต้อง sign in ก็ได้นะครับ</p>
 <p>เพียงแค่รอเท่านั้น</p>
-<p>เพราะว่า client ทุกเครื่องจะมี scheduled task ชื่อว่า Automatic-Device-Join รันอยู่</p>
-<p>Task รันด้วย computer account (SYSTEM) ไม่ใช่ user account</p>
-<p>และต่อให้เราไม่ sign in เข้าเครื่อง task ก็จะรันทุกๆ 1 ชั่วโมงอยู่ดี</p>
 <p><img alt="alt text" src="../../assets/ehj/250213/image-40.png" /></p>
-<p>เมื่อเราปล่อยให้ task ทำงานด้วยตัวเอง เขาจะค้นหาข้อมูลของ tenant จากค่าใน registry (ที่ deploy ผ่าน GPO มา)</p>
-<p>เมื่อพบข้อมูลของ Tenant เขาจะ generate self-signed certificate ขึ้นมา แล้วส่งส่วนที่เป็น public key ไปแปะไว้ใน computer object ของตัวเองใน AD DS</p>
+<p>Automatic-Device-Join บน device ที่รันทุกๆ 1 ชั่วโมง (หรือ เมื่อมีผู้ใช้ sign in เข้าเครื่อง) จะค้นหาข้อมูลของ tenant จากค่าใน registry (ที่ deploy ผ่าน GPO มา)</p>
+<p>แล้ว generate self-signed certificate ไปแปะไว้ใน computer object ของตัวเองใน AD DS</p>
 <p><img alt="alt text" src="../../assets/ehj/250213/image-43.png" /></p>
-<p>จากนั้นเมื่อ Entra Connect (ที่ทำงานทุกๆ 30 นาที) พบ computer object ที่มีค่า userCertificate ก็จะ sync computer object นั้นขึ้นไปยัง Entra ID</p>
+<p>แล้ว Entra Connect จะ sync computer object เครื่องนั้น ขึ้นไปยัง Entra ID ต่อไป</p>
 <p>อย่างไรก็ตาม เครื่องจะยังมี state เป็น Pending อยู่นะครับ</p>
 <p><img alt="alt text" src="../../assets/ehj/250213/image-28.png" /></p>
-<p>แต่เราก็ไม่ต้องทำอะไรก็ได้อีกเช่นกัน</p>
-<p>เราแค่รอต่อไป</p>
-<p>แล้วอีกไม่เกิน 1 ชั่วโมงถัดไป Automatic-Device-Join task ก็จะรันอีกครั้ง (รันทุกๆ 1 ชั่วโมง หรือเมื่อมี user sign in เข้าเครื่อง)</p>
-<p>แล้วเขาก็จะนำเครื่องเข้าไป authentication กับ Entra ID อีกครั้ง แล้วกลายเป็น Entra Hybrid joined device โดยสมบูรณ์ครับ</p>
+<p>และเมื่อ Automatic-Device-Join task รันอีกครั้ง</p>
+<p>เขาก็จะนำเครื่องเข้าไป authentication กับ Entra ID อีกครั้ง แล้วกลายเป็น Entra Hybrid joined device โดยสมบูรณ์ครับ</p>
 <p><img alt="alt text" src="../../assets/ehj/250213/image-27.png" /></p>
 <h3 id="43-test-sso">4.3 Test SSO</h3>
 <p>เมื่อเครื่องเป็น Entra Hybrid join devices โดยสมบูรณ์แล้ว</p>
