@@ -45,8 +45,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai+Looped:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans Thai Looped";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -829,8 +829,8 @@
 
 <h1 id="entra-hybrid-join-targeted-deployment">Entra Hybrid Join - Targeted Deployment</h1>
 <p>ปัจจุบัน เครื่องคอมพิวเตอร์ส่วนใหญ่ยัง join on-premises AD DS อยู่ เราสามารถนำเขาไป join Entra ID โดยอัตโนมัติได้ด้วย Entra Hybrid Join</p>
-<p>ในขณะที่เราสามารถ รีรัน Entra Connect เพื่อสร้าง SCP (Service Connection Point) object ลงใน AD DS ให้ทุกเครื่องที่ join domain มองเห็น ตาม <a href="https://learn.microsoft.com/en-us/entra/identity/devices/how-to-hybrid-join#managed-domains">Configure Microsoft Entra hybrid join</a>
-<img alt="alt text" src="../../assets/ehj/250213/image-36.png" /></p>
+<p>ในขณะที่เราสามารถ รีรัน Entra Connect เพื่อสร้าง SCP (Service Connection Point) object ลงใน AD DS ให้ทุกเครื่องที่ join domain มองเห็น ตาม <a href="https://learn.microsoft.com/en-us/entra/identity/devices/how-to-hybrid-join#managed-domains">Configure Microsoft Entra hybrid join</a></p>
+<p><img alt="alt text" src="../../assets/ehj/250213/image-36.png" /></p>
 <p>เราก็สามารถทำอีกวิธีนึง คือ ทำให้ device แค่บางเครื่องรู้จักข้อมูลของ tenant ผ่านค่า registry บนเครื่อง เช่น deploy ค่าผ่าน GPO ได้เช่นกัน ตาม <a href="https://learn.microsoft.com/en-us/entra/identity/devices/hybrid-join-control">Microsoft Entra hybrid join targeted deployment</a></p>
 <p>แล้ว device จะใช้ข้อมูล tenant จาก SCP (ใน AD DS) หรือ registry (บนเครื่อง) เข้าไปทำ Entra Hybrid Join ต่อไป</p>
 <p>Entra Hybrid Join จะช่วยให้เครื่องที่ join AD DS มี identity ใน Entra ID และได้รับประโยชน์จาก SSO, สามารถเป็นสมาชิกของ device group, ใช้ทำ device-based authentication, และอื่นๆ ได้ เป็นต้น</p>
