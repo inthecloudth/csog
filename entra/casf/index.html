@@ -780,6 +780,7 @@
 <h1 id="conditional-access-secure-foundation">Conditional Access - Secure foundation</h1>
 <p>Ref. https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation</p>
 <h2 id="1-create-a-pilot-mfa-user-group">1. Create a pilot MFA user group</h2>
+<p><img alt="alt text" src="../image-56.png" /></p>
 <p><img alt="alt text" src="../image.png" /></p>
 <h2 id="1-require-multifactor-authentication-for-admins">1. Require multifactor authentication for admins</h2>
 <p><img alt="alt text" src="../image-1.png" /></p>
@@ -787,7 +788,8 @@
 <p><img alt="alt text" src="../image-3.png" /></p>
 <p><img alt="alt text" src="../image-4.png" /></p>
 <p><img alt="alt text" src="../image-5.png" /></p>
-<p><img alt="alt text" src="../image-6.png" /></p>
+<p>xxx</p>
+<p><img alt="alt text" src="../image-52.png" /></p>
 <p><img alt="alt text" src="../image-7.png" /></p>
 <p><img alt="alt text" src="../image-8.png" /></p>
 <p><img alt="alt text" src="../image-9.png" /></p>
@@ -797,7 +799,8 @@
 <p><img alt="alt text" src="../image-12.png" /></p>
 <p><img alt="alt text" src="../image-13.png" /></p>
 <p><img alt="alt text" src="../image-14.png" /></p>
-<p><img alt="alt text" src="../image-15.png" /></p>
+<p>xxx</p>
+<p><img alt="alt text" src="../image-53.png" /></p>
 <p><img alt="alt text" src="../image-16.png" /></p>
 <p><img alt="alt text" src="../image-17.png" /></p>
 <p><img alt="alt text" src="../image-18.png" /></p>
@@ -816,13 +819,41 @@
 <p><img alt="alt text" src="../image-29.png" /></p>
 <p><img alt="alt text" src="../image-30.png" /></p>
 <p><img alt="alt text" src="../image-31.png" /></p>
-<p><img alt="alt text" src="../image-32.png" /></p>
+<p>xxx</p>
+<p><img alt="alt text" src="../image-54.png" /></p>
 <p><img alt="alt text" src="../image-33.png" /></p>
 <p><img alt="alt text" src="../image-34.png" /></p>
 <p><img alt="alt text" src="../image-35.png" /></p>
 <p><img alt="alt text" src="../image-36.png" /></p>
 <p><img alt="alt text" src="../image-37.png" /></p>
+<pre><code>$Username = &quot;app1@cloud.coms.ws&quot;
+$Password = &quot;J@nuary!12024#&quot;
+$SecurePassword = ConvertTo-SecureString -String $Password -AsPlainText -Force
+$Creds = New-Object System.Management.Automation.PSCredential ($Username, $SecurePassword)
+
+Send-MailMessage -From &quot;app1@cloud.coms.ws&quot; `
+                 -To &quot;user1@cloud.coms.ws&quot; `
+                 -Subject &quot;Test Email via Basic Authentication&quot; `
+                 -Body &quot;This is a test email.&quot; `
+                 -SmtpServer &quot;smtp.office365.com&quot; `
+                 -UseSsl `
+                 -Credential $Creds `
+                 -Port 587
+</code></pre>
+<p><img alt="alt text" src="../image-38.png" /></p>
+<p><img alt="alt text" src="../image-40.png" /></p>
 <h2 id="4-require-multifactor-authentication-for-admins-accessing-microsoft-admin-portals">4. Require multifactor authentication for admins accessing Microsoft admin portals</h2>
+<p><img alt="alt text" src="../image-41.png" /></p>
+<p><img alt="alt text" src="../image-42.png" /></p>
+<p><img alt="alt text" src="../image-43.png" /></p>
+<p><img alt="alt text" src="../image-44.png" /></p>
+<p>xxx</p>
+<p><img alt="alt text" src="../image-55.png" /></p>
+<p><img alt="alt text" src="../image-46.png" /></p>
+<p><img alt="alt text" src="../image-47.png" /></p>
+<p><img alt="alt text" src="../image-48.png" /></p>
+<p><img alt="alt text" src="../image-49.png" /></p>
+<p><img alt="alt text" src="../image-50.png" /></p>
 <h2 id="5-require-multifactor-authentication-for-all-users">5. Require multifactor authentication for all users</h2>
 <h2 id="6-require-multifactor-authentication-for-azure-management">6. Require multifactor authentication for Azure management</h2>
 <h2 id="7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users">7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users</h2>
